@@ -1,10 +1,11 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import User from './pages/User';
 import Sidebar from './layout/Sidebar';
 import './layout/layout.scss';
 import Login from './pages/Login/login';
+import Dashboard from './pages/Login/Dashboard/dashboard';
 
 
 class App extends React.Component {
@@ -18,7 +19,7 @@ class App extends React.Component {
               <Sidebar />
               <div className='content sb-mc'>
                 <div className='grid grid-cols-12 gap-6 mt-5'>
-                  <Route exact path='/home' component={Home} />
+                  <Route exact path='/dashboard' component={Dashboard} />
                   <Route path='/user/:id' component={User} />
                   <Route path='/Login' component={Login} />
                 </div>

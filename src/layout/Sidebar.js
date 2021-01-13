@@ -28,7 +28,7 @@ class Sidebar extends Component {
             <ul>
               <li>
                 <NavLink
-                  to={'/home'}
+                  to={'/dashboard'}
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >

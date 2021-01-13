@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.stretch-card {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.stretch-card > .card {
+  width: 100%;
+  min-width: 100%;
+}
+.card {
+  border: 0;
+}
+.bg-gradient-danger {
+  background: linear-gradient(to right, #ffbf96, #fe7096);
+}
+.text-white {
+  color: #ffffff !important;
+}
+.bg-gradient-info {
+  background: linear-gradient(to right, #90caf9, #047edf 99%);
+}
+.bg-gradient-success{
+  background: linear-gradient(to right, #84d9d2, #07cdae);
+}
+
+
+
