@@ -46,7 +46,7 @@ export class LoginPage extends Component {
                 <Row className='login-table'  >
                     <Row className='login-content'>
                         <center>
-                             <h3 className='login-title' >Login</h3>
+                             <h2 className='login-title' >Login</h2>
                         </center>
                    
                        

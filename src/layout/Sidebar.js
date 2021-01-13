@@ -110,7 +110,7 @@ class Sidebar extends Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to={'/login'} className='side-menu' activeClassName=''>
+                <NavLink to={'/'} className='side-menu' activeClassName=''>
                   <FaSignOutAlt className=' fa-lg mr-3' />
                   Logout
                 </NavLink>
