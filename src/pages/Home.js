@@ -1,10 +1,11 @@
 import React from 'react';
+import Cards from '../components/cards/cards';
 
 class HomePage extends React.Component {
   render() {
     return (
       <div className=''>
-        <h1>Sweet Home </h1>
+        <Cards/>
       </div>
     );
   }

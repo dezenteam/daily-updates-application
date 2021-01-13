@@ -40,6 +40,9 @@ class Header extends React.Component {
               <NavItem>
                 <NavLink className='nav-link' to={'/Grid'}>Grid</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink className='nav-link' to={'/'}>Login</NavLink>
+              </NavItem>
             </Nav>
             {/* <NavbarText>Simple Text</NavbarText> */}
           </Collapse>
