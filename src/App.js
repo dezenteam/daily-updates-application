@@ -5,7 +5,8 @@ import User from './pages/User';
 import Sidebar from './layout/Sidebar';
 import './layout/layout.scss';
 import Login from './pages/Login/login';
-import Dashboard from './pages/Login/Dashboard/dashboard';
+import Dashboard from './pages/Dashboard/dashboard';
+import Profile from './pages/Profile/profile';
 
 
 class App extends React.Component {
@@ -22,6 +23,7 @@ class App extends React.Component {
                   <Route exact path='/dashboard' component={Dashboard} />
                   <Route path='/user/:id' component={User} />
                   <Route path='/Login' component={Login} />
+                  <Route path='/profile' component={Profile} />
                 </div>
               </div>
             </div>

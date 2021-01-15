@@ -53,7 +53,10 @@ class User extends React.Component {
                 <td>{data.following}</td>
               </tr>
             </tbody>
+            
+          
           </table>
+          
         ) : (
           <p>Loading...</p>
         )}

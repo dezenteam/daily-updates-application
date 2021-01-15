@@ -38,7 +38,7 @@ class Sidebar extends Component {
               </li>
               <li>
                 <NavLink
-                  to={'/user/taniarascia'}
+                  to={'/user/NabeelTayyab'}
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
