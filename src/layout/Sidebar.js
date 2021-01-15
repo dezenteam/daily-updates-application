@@ -61,7 +61,7 @@ class Sidebar extends Component {
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component
+                  <RiAlertLine className=' fa-lg mr-3' /> CRUD
                 </NavLink>
               </li>
               <li>
