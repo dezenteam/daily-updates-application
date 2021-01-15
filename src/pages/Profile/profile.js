@@ -11,9 +11,7 @@ export class Profile extends Component {
             Profile </h3> 
             <nav aria-label = "breadcrumb" >
             <ol className = "breadcrumb" >
-            <li className = "breadcrumb-item" > < a href = "!#" onClick = {event => event.preventDefault()}> General pages </a></li >
-            <li className = "breadcrumb-item active"
-            aria-current = "page"> Profile </li> </ol> 
+            </ol> 
             </nav> 
             </div> 
             <div className = "row" >
