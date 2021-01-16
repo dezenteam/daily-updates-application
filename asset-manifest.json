@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/react-shoaib-application/static/css/main.3f300710.chunk.css",
-    "main.js": "/react-shoaib-application/static/js/main.741e2368.chunk.js",
-    "main.js.map": "/react-shoaib-application/static/js/main.741e2368.chunk.js.map",
-    "runtime~main.js": "/react-shoaib-application/static/js/runtime~main.95526133.js",
-    "runtime~main.js.map": "/react-shoaib-application/static/js/runtime~main.95526133.js.map",
-    "static/css/2.a1d839b2.chunk.css": "/react-shoaib-application/static/css/2.a1d839b2.chunk.css",
-    "static/js/2.2cb073ce.chunk.js": "/react-shoaib-application/static/js/2.2cb073ce.chunk.js",
-    "static/js/2.2cb073ce.chunk.js.map": "/react-shoaib-application/static/js/2.2cb073ce.chunk.js.map",
-    "index.html": "/react-shoaib-application/index.html",
-    "precache-manifest.656b5588a698b4eb854f710f93a4f850.js": "/react-shoaib-application/precache-manifest.656b5588a698b4eb854f710f93a4f850.js",
-    "service-worker.js": "/react-shoaib-application/service-worker.js",
-    "static/css/2.a1d839b2.chunk.css.map": "/react-shoaib-application/static/css/2.a1d839b2.chunk.css.map",
-    "static/css/main.3f300710.chunk.css.map": "/react-shoaib-application/static/css/main.3f300710.chunk.css.map",
-    "static/media/all.min.css": "/react-shoaib-application/static/media/fa-solid-900.8e1ed89b.woff2"
-  }
+    "main.css": "/daily-updates-application/static/css/main.0a1c0bbb.chunk.css",
+    "main.js": "/daily-updates-application/static/js/main.90e42d63.chunk.js",
+    "main.js.map": "/daily-updates-application/static/js/main.90e42d63.chunk.js.map",
+    "runtime-main.js": "/daily-updates-application/static/js/runtime-main.b4e657b8.js",
+    "runtime-main.js.map": "/daily-updates-application/static/js/runtime-main.b4e657b8.js.map",
+    "static/css/2.f4426441.chunk.css": "/daily-updates-application/static/css/2.f4426441.chunk.css",
+    "static/js/2.11cc59aa.chunk.js": "/daily-updates-application/static/js/2.11cc59aa.chunk.js",
+    "static/js/2.11cc59aa.chunk.js.map": "/daily-updates-application/static/js/2.11cc59aa.chunk.js.map",
+    "index.html": "/daily-updates-application/index.html",
+    "precache-manifest.08d8946466aa78c0baaa9130b6081e8a.js": "/daily-updates-application/precache-manifest.08d8946466aa78c0baaa9130b6081e8a.js",
+    "service-worker.js": "/daily-updates-application/service-worker.js",
+    "static/css/2.f4426441.chunk.css.map": "/daily-updates-application/static/css/2.f4426441.chunk.css.map",
+    "static/css/main.0a1c0bbb.chunk.css.map": "/daily-updates-application/static/css/main.0a1c0bbb.chunk.css.map",
+    "static/js/2.11cc59aa.chunk.js.LICENSE.txt": "/daily-updates-application/static/js/2.11cc59aa.chunk.js.LICENSE.txt",
+    "static/media/all.min.css": "/daily-updates-application/static/media/fa-solid-900.9ae050d1.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4e657b8.js",
+    "static/css/2.f4426441.chunk.css",
+    "static/js/2.11cc59aa.chunk.js",
+    "static/css/main.0a1c0bbb.chunk.css",
+    "static/js/main.90e42d63.chunk.js"
+  ]
 }
