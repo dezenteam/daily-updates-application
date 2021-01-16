@@ -13,6 +13,7 @@ import CardType2 from './components/CradType2/CardType2';
 import TableData from './components/table/Table';
 import Profile from './pages/profile';
 import Admin from './pages/admin';
+import Table2 from './pages/table/exmpleTable';
 
 
 class App extends React.Component {
@@ -21,35 +22,19 @@ class App extends React.Component {
       <>
         {' '}
         <Switch>
-       {/* <Home/> */}
+    
         <div>
           <div className='container-fluid admin-fluid'>
             <div className='row' style={{ display: 'contents' }}>
-              <Sidebar />
-
-              {/* <AppLayoutRoute  path='/home' component={HomePage} /> */}
-              {/* <Route  path='/home' component={HomePage} /> */}
-
-              {/* <AppLayoutRoute  path='/user/taniarascia' component={User} /> */}
-              {/* <AppLayoutRoute  path='/home' component={HomePage} /> */}
-              <div className='content sb-mc'>
-                <div className='grid grid-cols-12 gap-6 mt-5'>
-
-                  <Route exact path='/' component={LoginPage} />
-              
-                  {/* <Route  path='/user/:id' component={User} /> */}
-                  <Route  path='/component-1' component={CrudOperations} />
-                  {/* <AppLayoutRoute  path='/home' component={HomePage} /> */}
-                  {/* <Route  path='/' component={LoginPage} /> */}
-                  <Route  path='/home' component={Home} />
-                  <Route  path='/user/taniarascia' component={User} />
-                  {/* <Route path='/api_data' component={TableData} /> */}
-                  <Route path='/profile' component={Admin} />
-                  <Route path='/component-5' component={Admin} />
-                  
-                  <Redirect to='/' component={LoginPage}  />
-                </div>
-              </div>
+             
+                <Route  exact  path='/' component={LoginPage} />
+                <AppLayoutRoute  path='/component-1' component={CrudOperations} />
+                <AppLayoutRoute path='/api_data' component={TableData} />
+                <AppLayoutRoute path='/component-5' component={Admin} />
+                <AppLayoutRoute path='/profile' component={Admin} />
+                <AppLayoutRoute  path='/home' component={Home} />
+                {/* <AppLayoutRoute  path='/user/taniarascia' component={User} /> */}
+                <AppLayoutRoute  path='/user/taniarascia' component={Table2} />
             </div>
           </div>
         </div>

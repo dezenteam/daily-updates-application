@@ -121,6 +121,11 @@ class Sidebar extends Component {
             </ul>
           </nav>
         </div>
+        <div className='content sb-mc'>
+                <div className='grid grid-cols-12 gap-6 mt-5'>
+                  {this.props.children}
+                </div>
+         </div>
       </Fragment>
     );
   }

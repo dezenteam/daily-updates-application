@@ -8,7 +8,7 @@ class HomePage extends React.Component {
     return (
       <div >
         <div class="media border bg-white p-3">
-          <img src="https://react.semantic-ui.com/images/avatar/small/matt.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style={{width:'60px'}} />
+          <img src="https://react.semantic-ui.com/images/avatar/small/matt.jpg" alt="John Doe" class="mr-2 mt-3 rounded-circle" style={{width:'60px'}} />
           <div class="media-body">
             <h4>Admin <small><i> Jan 15, 2021</i></small></h4>
             <p>Detailed Description Analytics...</p>
