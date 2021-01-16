@@ -1,0 +1,23 @@
+.rcrow1 {
+  width: 1025px;
+  height: 150px;
+  background: white;
+
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.inputtxt {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 3px;
+  border: 1px lightslategray;
+}
+.inputfields {
+  width: "240px";
+  height: "20px";
+}
+.tableContent {
+  border: 1px lightgray !important;
+  background-color: white !important;
+}

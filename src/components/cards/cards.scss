@@ -1,7 +1,30 @@
 .col-sm {
   border: 1px solid #cccccc;
   margin: 0px 5px;
-  background-color: white;
+  background-color: green;
   height: 110px;
   padding: 20px;
+}
+.cardIcon1 {
+  background-color: green;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 24px;
+}
+
+.col-sm:nth-child(2) {
+  background: red;
+  color: white;
+  font-size: 24px;
+}
+.col-sm:nth-child(3) {
+  background: rgb(250, 250, 68);
+  color: white;
+  font-size: 24px;
+}
+.col-sm:nth-child(4) {
+  background: rgb(22, 35, 107);
+  color: white;
+  font-size: 24px;
 }

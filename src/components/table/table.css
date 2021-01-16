@@ -1,0 +1,69 @@
+.client-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+Table,th,tr{
+    width: 1350px;
+    border: 1px solid black;
+    background-color: lavender;
+    border-collapse:collapse;
+    text-align: center;
+    margin: 0px;
+}
+td{
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.add-client-list{
+    width: 90px;
+    height: 30px;
+    background-color: green;
+    color: white;
+}
+.primary-btn{
+    background-color: steelblue;
+    color: white;
+    border: none;
+    margin: 1px;
+    width: 50px;
+}
+.danger-btn{
+    background-color:red !important;
+    color: white;
+    border: none;
+    margin: 1px;
+}
+.approve-btn{
+    background-color: green !important; 
+    color: white;
+    border: none;
+    margin: 1px;
+}
+.update-btn{
+    background-color:steelblue !important;
+    color:black;
+    border: none;
+    margin: 1px;
+}
+
+.my-size-per-page{
+    float: left;
+
+}
+.pagination{
+    float: right !important;
+    margin: 20px;
+}
+.dropdown-toggle {
+   
+    color:white !important;
+    border: white !important;
+    border-radius: 20% !important;
+}
+.btn-warning {
+    background-color: yellow !important;
+    color: black;
+}

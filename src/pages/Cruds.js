@@ -20,7 +20,7 @@ class CrudOperations extends React.Component{
         axios.get("https://jsonplaceholder.typicode.com/posts")
         .then( response => {
             this.setState({
-                posts:response.data
+                posts:response.data.slice(0,6)
             })
         })
         .catch( error => {
@@ -67,17 +67,17 @@ class CrudOperations extends React.Component{
     render(){
         const {userId,title,body,posts,errorMassage} =this.state
         return(
-         <div>
+         <div >
            Enter Input Data
-             <div>
+             <div style={{display:'flex',justifyContent:'space-evenly'}}>
                 <input type='text' name='userId' placeholder='id' value={userId}  onChange={this.changeHandler} />
                 <input type='text' name='title'  placeholder='title' value={title} onChange={this.changeHandler}  />
                 <input type='text' name='body' placeholder='body'  value={body} onChange={this.changeHandler}  />
-             <button onClick={this.submitHandler} >ADD DATA</button> 
-              <button onClick={(id)=> this.updateChange(5)} > DELETE </button>  
+             <button onClick={this.submitHandler} style={{margin:'5px'}} >ADD DATA</button> 
+              <button onClick={(id)=> this.updateChange(5)} style={{margin:'5px'}} > DELETE </button>  
             </div>
              <div>
-             <Table>
+             <Table style={{width:"100%"}} >
                          <tr>
                              <th>POST ID </th>
                              <th>POST  TITLE </th>
@@ -88,7 +88,7 @@ class CrudOperations extends React.Component{
                      posts.map( post => 
                          <tr  key={post.id}>
                               <td>   {  post.id} </td>
-                              <td>   {  post.title.slice(5,15)} </td>
+                              <td>   {  post.title.slice(0,10)} </td>
                               <td>   {  post.body.slice(0,25)} </td>
                          </tr>
                       

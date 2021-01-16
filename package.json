@@ -35,11 +35,14 @@
     "gh-pages": "^2.1.1",
     "node-sass": "4.14.1",
     "react": "^16.14.0",
+    "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.14.0",
     "react-fontawesome": "^1.7.1",
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.1.1",
-    "reactstrap": "^8.8.1"
+    "react-select": "^3.2.0",
+    "reactstrap": "^8.8.1",
+    "semantic-ui-react": "^2.0.2"
   }
 }

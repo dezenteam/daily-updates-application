@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import {Button,Table} from 'reactstrap'
 
 
 class User extends React.Component {
@@ -17,7 +18,7 @@ class User extends React.Component {
     this.setState({ fetchingUser: true });
     let thisView = this;
     axios
-      .get(`https://api.github.com/users/${this.props.match.params.id}`)
+      .get(`https://jsonplaceholder.typicode.com/posts`)
       .then(function (res) {
         let data = res.data && res.data ? res.data : {};
         console.log(data);
@@ -30,32 +31,49 @@ class User extends React.Component {
       });
   };
 
+  deleteData = (id)=>  {
+    axios.delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    .then(res => {
+        const data = res.data;
+        this.setState({ data });
+    })
+}
+
+updateData = (id)=>  {
+  axios.put(`https://jsonplaceholder.typicode.com/posts/${id}`)
+  .then(res => {
+      const data = res.data;
+      this.setState({ data });
+  })
+
+}
+
   render() {
     const { data, fetchingUser } = this.state;
     return (
       <div className=''>
         <h4>Api User Data</h4>
         {fetchingUser ? (
-          <table>
+          <Table>
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Location</th>
-                <th>Followers</th>
-                <th>Following</th>
+                <th>TITLE</th>
+                <th>BODY</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>{data.id}</td>
-                <td>{data.name}</td>
-                <td>{data.location}</td>
-                <td>{data.followers}</td>
-                <td>{data.following}</td>
+                <td>{data.title}</td>
+                <td>{data.body}</td>
+                <td> <Button color="success">UPDATE</Button> </td>
+                <td> <Button color="danger" onClick={(data)=> this.deleteData(data.id)}   >DELETE</Button> </td>
               </tr>
             </tbody>
-          </table>
+          </Table>
         ) : (
           <p>Loading...</p>
         )}

@@ -61,7 +61,10 @@ class Sidebar extends Component {
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
+
                   <RiAlertLine className=' fa-lg mr-3' /> CRUD
+                  <RiAlertLine className=' fa-lg mr-3' /> Component1
+
                 </NavLink>
               </li>
               <li>
@@ -70,7 +73,7 @@ class Sidebar extends Component {
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component
+                  <RiAlertLine className=' fa-lg mr-3' /> Component2
                 </NavLink>
               </li>
               <li>
@@ -79,7 +82,7 @@ class Sidebar extends Component {
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component
+                  <RiAlertLine className=' fa-lg mr-3' /> Component3
                 </NavLink>
               </li>
               <li>
@@ -88,7 +91,7 @@ class Sidebar extends Component {
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component
+                  <RiAlertLine className=' fa-lg mr-3' /> Component4
                 </NavLink>
               </li>
               <li>
@@ -97,7 +100,7 @@ class Sidebar extends Component {
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component
+                  <RiAlertLine className=' fa-lg mr-3' /> Component5
                 </NavLink>
               </li>
               <li>
@@ -106,7 +109,7 @@ class Sidebar extends Component {
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component
+                  <RiAlertLine className=' fa-lg mr-3' /> Component6
                 </NavLink>
               </li>
               <li>
