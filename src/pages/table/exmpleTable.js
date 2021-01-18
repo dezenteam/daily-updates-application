@@ -38,7 +38,14 @@ import Model2 from '../models2/model2';
                 type:'Laptops'
                 
             }] ,
-            todos:[],
+            todos:[
+              {
+                userId: 1,
+                id: 2,
+                title: "quis ut nam facilis et officia qui",
+                completed: false
+                }
+            ],
 
             // dropdownLables : [
             //   { value:'Electronic' , label: 'Electronic' },
@@ -52,7 +59,7 @@ import Model2 from '../models2/model2';
 
 
 componentDidMount(){
-  axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+  axios.get('https://jsonplaceholder.typicode.com/todos?_limit=6')
   .then(res=> this.setState({
     todos:res.data
   })  )
@@ -86,24 +93,26 @@ actionButtonsFormatter = (cell, row) => {
 
 
   updateChange=(row)=>{
-  //   let product_row = 
-  //   [{
-  //     id:row.id,
-  //     name:row.name,
-  //     price:row.price,
-  //     type:row.type
+  
+       
+   
+    // let table_row = 
+    // [  {
+    //   userId: 1,
+    //   id: 2,
+    //   title: "quis ut nam facilis et officia qui",
+    //   completed: false
+    //   } ]
 
-  //   } ]
-
-  //   this.setState({ products:product_row})
+    // this.setState({ products:product_row})
     }
 
   deleteChange=(id)=>{
 
     console.log("delete clicked",id)
-    const delet = this.state.products.filter( products => products.id !==id )
+    const delet = this.state.todos.filter( todos => todos.id !==id )
     this.setState({
-      products :delet
+      todos :delet
     })
     
   }
@@ -154,19 +163,19 @@ actionButtonsFormatter = (cell, row) => {
 
     render() {
 
-        const {products } = this.state;
+        const {products,todos } = this.state;
         const options = {
           sizePerPageDropDown: this.renderSizePerPageDropDown
         };
        
 
       return (
-        <div className='container-fluid'>
-          <BootstrapTable width='100' data={ products } options={options}   pagination   search   >
-            <TableHeaderColumn width='100' dataField='id' isKey={true}>Product ID</TableHeaderColumn>
-            <TableHeaderColumn width='100' dataField='name'>Product Name</TableHeaderColumn>
-            <TableHeaderColumn width='100' dataField='price'>Product Price</TableHeaderColumn>
-            <TableHeaderColumn width='100' dataField='type'>Product Type</TableHeaderColumn>
+        <div className='container'>
+          <BootstrapTable width='100' data={ todos } options={options}   pagination   search   >
+            <TableHeaderColumn width='100' dataField='id' isKey={true}> ID</TableHeaderColumn>
+            <TableHeaderColumn width='100' dataField='title'> Title</TableHeaderColumn>
+            <TableHeaderColumn width='100' dataField='completed'>Status</TableHeaderColumn>
+         
 
             {/* <TableHeaderColumn width='100'  dataFormat={this.selectButton}>Product Type</TableHeaderColumn> */}
             <TableHeaderColumn width='100' dataFormat={ this.actionButtonsFormatter} >Actions</TableHeaderColumn>
