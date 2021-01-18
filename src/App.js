@@ -35,6 +35,7 @@ class App extends React.Component {
                 <AppLayoutRoute  path='/home' component={Home} />
                 {/* <AppLayoutRoute  path='/user/taniarascia' component={User} /> */}
                 <AppLayoutRoute  path='/user/taniarascia' component={Table2} />
+                <Redirect    path='*' component={LoginPage} />
             </div>
           </div>
         </div>

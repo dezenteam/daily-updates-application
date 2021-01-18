@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import './table.css';
 import Select from 'react-select';
 
@@ -37,6 +38,7 @@ import Model2 from '../models2/model2';
                 type:'Laptops'
                 
             }] ,
+            todos:[],
 
             // dropdownLables : [
             //   { value:'Electronic' , label: 'Electronic' },
@@ -47,6 +49,17 @@ import Model2 from '../models2/model2';
           
         } 
 }
+
+
+componentDidMount(){
+  axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+  .then(res=> this.setState({
+    todos:res.data
+  })  )
+  
+  
+  }
+
 
 
 

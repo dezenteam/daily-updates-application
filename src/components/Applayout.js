@@ -6,6 +6,7 @@ import Sidebar from '../layout/Sidebar';
 
 
 const AppLayoutRoute = ({ component: Component, ...rest }) => {
+    
     return (
         <Route
             {...rest}
