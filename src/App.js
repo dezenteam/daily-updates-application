@@ -20,9 +20,9 @@ class App extends React.Component {
               <Sidebar />
               <div className='content sb-mc'>
                 <div className='grid grid-cols-12 gap-6 mt-5'>
-                  <Route exact path='/dashboard' component={Dashboard} />
+                  <Route  exact path='/dashboard' component={Dashboard} />
                   <Route path='/user/:id' component={User} />
-                  <Route path='/Login' component={Login} />
+                  <Route  path='/Login' component={Login} />
                   <Route path='/profile' component={Profile} />
                 </div>
               </div>

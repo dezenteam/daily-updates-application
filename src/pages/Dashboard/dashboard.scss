@@ -8,9 +8,10 @@
   display: flex;
   align-items: stretch;
   justify-content: stretch;
+  
 }
 .stretch-card > .card {
-  width: 100%;
+  width:100%;
   min-width: 100%;
 }
 .card {
@@ -28,6 +29,8 @@
 .bg-gradient-success{
   background: linear-gradient(to right, #84d9d2, #07cdae);
 }
-
+.bg-gradient-warning{
+  background: linear-gradient(to right, #d9d384b0, #c0cd07a2);
+}
 
 

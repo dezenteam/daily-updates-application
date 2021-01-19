@@ -57,11 +57,11 @@ class Sidebar extends Component {
                   </NavLink>
                 </li>
                 <NavLink
-                  to={'/Login'}
+                  to={'/component-1'}
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Login
+                  <RiAlertLine className=' fa-lg mr-3' /> Component
                 </NavLink>
               </li>
               <li>
@@ -110,7 +110,7 @@ class Sidebar extends Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to={'/login'} className='side-menu' activeClassName=''>
+                <NavLink to={'/Login'} className='side-menu' activeClassName=''>
                   <FaSignOutAlt className=' fa-lg mr-3' />
                   Logout
                 </NavLink>
