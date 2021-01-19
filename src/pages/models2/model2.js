@@ -28,32 +28,21 @@ export class Model2 extends Component {
             showmodal : !this.state.showmodal ,
             productId : '',
             productName: '',
-            productPrice: '',
-            productType :{ } ,  
+            productPrice: ''   
         }) ; 
     }
 
-    //Cancel Model
-    // closeModal = () =>{
-    //     this.setState({
-    //         showmodal : false
-    //     });
-    // }
-
-    //
     handleProductInputs = (e) => {
         this.setState({
             [e.target.name] : e.target.value
         });
     }
 
-
     onChangeProductType = (selectedProductType)=>{
         console.log(selectedProductType)
         this.setState({
             productType : selectedProductType
         })
-
     }
 
     displayModalList = (e) => {
@@ -63,17 +52,13 @@ export class Model2 extends Component {
         this.props.inserList(productId,productName,productPrice,productType);
         console.log('productType',productType)
         this.toggleModel();
-        // let submit =[{productId : this.state.productId},{productName:this.state.productName},{productPrice:this.state.productPrice}];  
-        
     }
-    
-
     render() {
         const { showmodal } = this.state;
         return (
             <div>
                  <Button onClick={this.toggleModel}  >AddProduct</Button>
-              {/* {showmodal ?  */}
+            
                 <Modal isOpen={showmodal} >
                     <ModalHeader >Employee Details</ModalHeader>
                     <ModalBody>
@@ -90,25 +75,15 @@ export class Model2 extends Component {
                                 <Label>Status</Label>
                                 <Input placeholder='status' value={this.state.productPrice} name='productPrice' onChange={this.handleProductInputs} />
                             </FormGroup>
-                            {/* <FormGroup>
-                                <Label>Product type</Label>
-                                <Select options={options} name='dropdownLables' value={this.state.productType} onChange={this.onChangeProductType} />
-                            </FormGroup> */}
-                            
                             <FormGroup>
                                  <Button color="primary" type='submit' >Submit</Button>
                             </FormGroup>
-                        </Form>
-                       
-                        
+                        </Form>      
                     </ModalBody>
                     <ModalFooter>
-                   
                     <Button color="danger" onClick={this.toggleModel} >Cancel</Button>
                     </ModalFooter>
                 </Modal>
-
-                  {/* : ''}  */}
 
             </div>
         )

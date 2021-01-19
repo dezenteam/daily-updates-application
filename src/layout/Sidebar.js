@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
-import './Sidebar.scss';
-import { MdPayment } from 'react-icons/md';
-import { FiHome } from 'react-icons/fi';
-import { FaSignOutAlt, FaUserCircle } from 'react-icons/fa';
-import { RiAlertLine } from 'react-icons/ri';
+import React, { Component, Fragment } from "react";
+import { NavLink } from "react-router-dom";
+import "./Sidebar.scss";
+import { MdPayment } from "react-icons/md";
+import { FiHome } from "react-icons/fi";
+import { FaSignOutAlt, FaUserCircle } from "react-icons/fa";
+import { RiAlertLine } from "react-icons/ri";
 
 class Sidebar extends Component {
   constructor(props) {
@@ -15,117 +15,114 @@ class Sidebar extends Component {
   render() {
     return (
       <Fragment>
-        <div className='side-nav-main'>
-          <nav className='side-nav'>
-            <div className='sb-logo'>
-              <div className='logo  mx-auto'>
-                <i className='fa fa-user-circle icon-user' />
-                <h3 className='logo-admin-text'>Shoaib Ahmed</h3>
+        <div className="side-nav-main">
+          <nav className="side-nav">
+            <div className="sb-logo">
+              <div className="logo  mx-auto">
+                <i className="fa fa-user-circle icon-user" />
+                <h3 className="logo-admin-text">Shoaib Ahmed</h3>
               </div>
             </div>
 
-            <div className='side-nav__devider my-6'></div>
+            <div className="side-nav__devider my-6"></div>
             <ul>
               <li>
                 <NavLink
-                  to={'/home'}
-                  className='side-menu'
-                  activeClassName='side-menu--active'
+                  to={"/home"}
+                  className="side-menu"
+                  activeClassName="side-menu--active"
                 >
-                  <FiHome className=' fa-lg mr-3' />
+                  <FiHome className=" fa-lg mr-3" />
                   Dashboard
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to={'/user/taniarascia'}
-                  className='side-menu'
-                  activeClassName='side-menu--active'
+                  to={"/user/taniarascia"}
+                  className="side-menu"
+                  activeClassName="side-menu--active"
                 >
-                  <MdPayment className=' fa-lg mr-3' />
+                  <MdPayment className=" fa-lg mr-3" />
                   Table APIs Data
                 </NavLink>
               </li>
               <li>
                 <li>
                   <NavLink
-                    to={'/profile'}
-                    className='side-menu'
-                    activeClassName='side-menu--active'
+                    to={"/profile"}
+                    className="side-menu"
+                    activeClassName="side-menu--active"
                   >
-                    <FaUserCircle className=' fa-lg mr-3' /> Profile
+                    <FaUserCircle className=" fa-lg mr-3" /> Profile
                   </NavLink>
                 </li>
                 <NavLink
-                  to={'/component-1'}
-                  className='side-menu'
-                  activeClassName='side-menu--active'
+                  to={"/component-1"}
+                  className="side-menu"
+                  activeClassName="side-menu--active"
                 >
-
-                  <RiAlertLine className=' fa-lg mr-3' /> CRUD
-                  <RiAlertLine className=' fa-lg mr-3' /> Component1
-
+                  <RiAlertLine className=" fa-lg mr-3" /> CRUDs
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to={'/component-2'}
-                  className='side-menu'
-                  activeClassName='side-menu--active'
+                  to={"/component-2"}
+                  className="side-menu"
+                  activeClassName="side-menu--active"
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component2
+                  <RiAlertLine className=" fa-lg mr-3" /> Personal Info
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to={'/component-3'}
-                  className='side-menu'
-                  activeClassName='side-menu--active'
+                  to={"/settings"}
+                  className="side-menu"
+                  activeClassName="side-menu--active"
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component3
+                  <RiAlertLine className=" fa-lg mr-3" /> Settings
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to={'/component-4'}
-                  className='side-menu'
-                  activeClassName='side-menu--active'
+                  to={"/component-4"}
+                  className="side-menu"
+                  activeClassName="side-menu--active"
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component4
+                  <RiAlertLine className=" fa-lg mr-3" /> Component4
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to={'/component-5'}
-                  className='side-menu'
-                  activeClassName='side-menu--active'
+                  to={"/component-5"}
+                  className="side-menu"
+                  activeClassName="side-menu--active"
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component5
+                  <RiAlertLine className=" fa-lg mr-3" /> Component5
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to={'/component-6'}
-                  className='side-menu'
-                  activeClassName='side-menu--active'
+                  to={"/component-6"}
+                  className="side-menu"
+                  activeClassName="side-menu--active"
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component6
+                  <RiAlertLine className=" fa-lg mr-3" /> Component6
                 </NavLink>
               </li>
               <li>
-                <NavLink to={'/'} className='side-menu' activeClassName=''>
-                  <FaSignOutAlt className=' fa-lg mr-3' />
+                <NavLink to={"/"} className="side-menu" activeClassName="">
+                  <FaSignOutAlt className=" fa-lg mr-3" />
                   Logout
                 </NavLink>
               </li>
             </ul>
           </nav>
         </div>
-        <div className='content sb-mc'>
-                <div className='grid grid-cols-12 gap-6 mt-5'>
-                  {this.props.children}
-                </div>
-         </div>
+        <div className="content sb-mc">
+          <div className="grid grid-cols-12 gap-6 mt-5">
+            {this.props.children}
+          </div>
+        </div>
       </Fragment>
     );
   }

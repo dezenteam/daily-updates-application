@@ -40,7 +40,7 @@ import Model2 from '../models2/model2';
             }] ,
             todos:[
               {
-                userId: 1,
+                
                 id: 2,
                 title: "quis ut nam facilis et officia qui",
                 completed: false
@@ -62,13 +62,8 @@ componentDidMount(){
   axios.get('https://jsonplaceholder.typicode.com/todos?_limit=6')
   .then(res=> this.setState({
     todos:res.data
-  })  )
-  
-  
-  }
-
-
-
+  })  
+)}
 
 selectButton =(cell,row)=>{
   return(
@@ -85,18 +80,19 @@ actionButtonsFormatter = (cell, row) => {
   // console.log('cellitems',cell)
   return (
   <div>
-      <Button onClick={this.updateChange(row)} className='update-btn'  >Update</Button>
+      <Button onClick={this.updateChange()} className='update-btn'  >Update</Button>
       <Button onClick= { () =>  {this.deleteChange(row.id)} }  className='danger-btn' >Delete</Button>
     
   </div>
   )}
 
 
-  updateChange=(row)=>{
-  
-       
-   
-    // let table_row = 
+  updateChange=()=>{
+    this.props.history.push('/user/taniarascia')
+ 
+    }
+
+   // let table_row = 
     // [  {
     //   userId: 1,
     //   id: 2,
@@ -105,20 +101,14 @@ actionButtonsFormatter = (cell, row) => {
     //   } ]
 
     // this.setState({ products:product_row})
-    }
 
   deleteChange=(id)=>{
-
     console.log("delete clicked",id)
     const delet = this.state.todos.filter( todos => todos.id !==id )
     this.setState({
       todos :delet
-    })
-    
+    })    
   }
-
- 
-
 
   //pagination customization
 
@@ -157,10 +147,6 @@ actionButtonsFormatter = (cell, row) => {
     })
   }
 
-  
-
-  
-
     render() {
 
         const {products,todos } = this.state;
@@ -168,21 +154,16 @@ actionButtonsFormatter = (cell, row) => {
           sizePerPageDropDown: this.renderSizePerPageDropDown
         };
        
-
       return (
         <div className='container'>
           <BootstrapTable width='100' data={ todos } options={options}   pagination   search   >
             <TableHeaderColumn width='100' dataField='id' isKey={true}> ID</TableHeaderColumn>
             <TableHeaderColumn width='100' dataField='title'> Title</TableHeaderColumn>
             <TableHeaderColumn width='100' dataField='completed'>Status</TableHeaderColumn>
-         
-
-            {/* <TableHeaderColumn width='100'  dataFormat={this.selectButton}>Product Type</TableHeaderColumn> */}
             <TableHeaderColumn width='100' dataFormat={ this.actionButtonsFormatter} >Actions</TableHeaderColumn>
-            {/* <TableHeaderColumn></TableHeaderColumn> */}
           </BootstrapTable>
-         
-              <Model2  inserList={this.inserList} selectTypeofProduct={this.selectTypeofProduct} />
+          
+           <Model2  inserList={this.inserList} selectTypeofProduct={this.selectTypeofProduct} />
           
         </div>
       );
