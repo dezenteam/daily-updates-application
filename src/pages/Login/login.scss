@@ -1,0 +1,132 @@
+.auth .auth-form-light {
+    background: #ffffff;
+    width:400px;
+    height:560px;
+    box-shadow: 1px 1px 10px 1px #888888;
+   margin-top: 10px; 
+}
+.text-left {
+    text-align: left !important;
+}
+a, div, h1, h2, h3, h4, h5, p, span {
+    text-shadow: none;
+}
+h4, .h4 {
+    font-size: 1.13rem;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Ubuntu", sans-serif;
+}
+h4 {
+   font-weight: bold;
+}
+.font-weight-light {
+    font-weight: 300 !important;
+}
+h6, .h6 {
+    font-size: .9375rem;
+}
+.pt-3 {
+    padding-top: 1rem !important;
+}
+.auth form .form-group {
+    margin-bottom: 1.5rem;
+}
+.d-flex {
+    display: flex !important;
+}
+.auth form .form-group .form-control {
+    background: transparent;
+    border-radius: 0;
+    font-size: .9375rem;
+}
+.form-control {
+    font-size: 0.8125rem;
+    box-shadow: none;
+    padding: 0.875rem 1.375rem;
+    line-height: 1;
+    color: #495057;
+    border: 1px solid #ced4da;
+}
+.h-auto {
+    height: auto !important;
+}
+.auth form .auth-form-btn {
+    padding: 1rem 3rem;
+    line-height: 1.5;
+}
+.btn-primary:not(.btn-light) {
+    color: #ffffff;
+}
+.btn.btn-lg {
+    font-size: 0.875rem;
+    border-radius: 0.1875rem;
+}
+.btn-block {
+    display: block; 
+    width: 100%; 
+}
+.btn-primary {
+    background-color: #b66dff;
+    border-color: #b66dff;
+}
+.mb-2, .my-2 {
+    margin-bottom: 0.5rem !important;
+}
+.my-2 {
+    margin-top: 0.5rem !important;
+}
+.justify-content-between, .page-header {
+    justify-content: space-between !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.form-check {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+.form-check .form-check-label {
+    min-height: 18px;
+    display: block;
+    margin-left: 1.3rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.text-muted {
+    color: #9c9fa6 !important;
+}
+.auth form .auth-link {
+    font-size: 0.875rem;
+    margin-top:15px;
+}
+.text-black {
+    color: black;
+}
+.auth form .auth-form-btn {
+    padding: 1rem 3rem;
+    line-height: 1.5;
+}
+.btn-facebook {
+    background: #3b579d;
+    color: #ffffff;
+}
+.text-primary{
+    color: #b66dff !important;
+}
+.text-center {
+     text-align: center !important;
+}
+.btn-facebook:hover {
+    background-color: #b66dff;
+    border-color: #b66dff;
+    color: #ffffff;
+}
+.error {
+   background-color:pink;
+   color: brown;
+}
