@@ -110,7 +110,7 @@ class Sidebar extends Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink to={'/Login'} className='side-menu' activeClassName=''>
+                <NavLink to={'/'} className='side-menu' activeClassName=''>
                   <FaSignOutAlt className=' fa-lg mr-3' />
                   Logout
                 </NavLink>
@@ -118,6 +118,11 @@ class Sidebar extends Component {
             </ul>
           </nav>
         </div>
+        <div className='content sb-mc'>
+                <div className='grid grid-cols-12 gap-6 mt-5'>
+                  {this.props.children}
+                </div>
+         </div>
       </Fragment>
     );
   }

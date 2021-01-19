@@ -2,7 +2,19 @@ import React, { Component } from "react";
 import "./profile.scss";
 
 export class Profile extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      displaydata:false
+      
+    };
+  }
+ showdata = (e) => {
+   e.preventDefault();
+   this.setState({displaydata:!this.state.displaydata})
+ }
   render() {
+   
     return (
       <div>
         <div className="row">
@@ -10,7 +22,7 @@ export class Profile extends Component {
             <div className="card">
               <div className="card-body">
                 <div className="row">
-                  <div className="col-lg-4">
+                  <div className="col-lg-4 left_section">
                     <div className="border-bottom text-center pb-4 info">
                       <img
                         src={require("../../assets/images/faces/face12.jpg")}
@@ -108,7 +120,7 @@ export class Profile extends Component {
                           <a
                             className="nav-link d-flex align-items-center about"
                             href="!#"
-                            onClick={(event) => event.preventDefault()}
+                            onClick={this.showdata}
                           >
                             About Me
                           </a>
@@ -126,7 +138,7 @@ export class Profile extends Component {
                     </div>
                     <div className="profile-feed">
                       <div className="d-flex align-items-start profile-feed-item">
-                        <div className="about_text">
+                        {this.state.displaydata ? <div className="about_text">
                           <p>
                             For the past 16 years, I've been developing
                             applications for the web using mostly PHP. I do this
@@ -174,7 +186,7 @@ export class Profile extends Component {
                             development tutorials for my website and blog about
                             advancements in web design and development.
                           </p>
-                        </div>
+                        </div> : null}
                       </div>
                     </div>
                   </div>
