@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Use React Router DOM to create a Single Page Application",
   "private": false,
+  "homepage": "http://localhost/nabeel-application",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
