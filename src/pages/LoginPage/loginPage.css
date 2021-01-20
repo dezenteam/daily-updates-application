@@ -3,9 +3,10 @@
   height: 100vh;
   background-color: #f4f6f9 !important;
   align-items: center;
+  justify-content: center;
 }
 .login-content {
-  /* border: 1px solid #cccccc; */
+  border: 1px solid #cccccc;
   box-shadow: 0 0 15px #cccccc;
   width: 550px !important;
   height: 380px;
@@ -13,9 +14,8 @@
   margin: 5px;
   display: flex;
   flex-direction: column;
-  margin: 70px 400px;
-  /* justify-content: center; */
-  align-items: left;
+  margin-left: 70px !important;
+  padding-left: 50px !important;
 }
 .login-lable {
   padding: 5px 20px;
@@ -49,4 +49,11 @@
 }
 .forgot {
   float: right !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }

@@ -72,7 +72,7 @@ export class SetPassword extends Component {
             </Row>{" "}
             {this.state.error ? (
               <Row className="setpassword-lable">
-                <Label> incorrect Password</Label>
+                <Label style={{ color: "red" }}> incorrect Password</Label>
               </Row>
             ) : null}
             <Row>

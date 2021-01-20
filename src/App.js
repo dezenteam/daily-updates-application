@@ -10,10 +10,12 @@ import AppLayoutRoute from "./components/Applayout";
 import CrudOperations from "./pages/Cruds";
 import CardType2 from "./components/CradType2/CardType2";
 import TableData from "./components/table/Table";
-import Profile from "./pages/profile";
+import Profile from "./pages/Profile/profile";
 import Admin from "./pages/admin";
 import Table2 from "./pages/table/exmpleTable";
 import SetPassword from "./pages/SetPassword/SetPassword";
+import MyChart from "./pages/Charts/chart";
+import PageNotFound from "./pages/PageNotFound";
 
 class App extends React.Component {
   render() {
@@ -25,18 +27,16 @@ class App extends React.Component {
             <div className="container-fluid admin-fluid">
               <div className="row" style={{ display: "contents" }}>
                 <Route exact path="/" component={LoginPage} />
-                <AppLayoutRoute
-                  path="/component-1"
-                  component={CrudOperations}
-                />
-                <AppLayoutRoute path="/api_data" component={TableData} />
-                <AppLayoutRoute path="/component-5" component={Admin} />
-                <AppLayoutRoute path="/profile" component={Admin} />
-                <AppLayoutRoute path="/home" component={Home} />
-                {/* <AppLayoutRoute  path='/user/taniarascia' component={User} /> */}
-                <AppLayoutRoute path="/user/taniarascia" component={Table2} />
+                <AppLayoutRoute path="/profile" component={Profile} />
+                <AppLayoutRoute path="/restdata" component={TableData} />
+                <AppLayoutRoute exact path="/home" component={Home} />
+                <AppLayoutRoute path="/crud" component={CrudOperations} />
+                <AppLayoutRoute path="/info" component={Admin} />
                 <AppLayoutRoute path="/settings" component={SetPassword} />
-                <Redirect path="*" component={LoginPage} />
+                <AppLayoutRoute path="/charts" component={MyChart} />
+                <AppLayoutRoute path="/component-5" component={LoginPage} />
+                <AppLayoutRoute path="/component-6" component={LoginPage} />
+                <Redirect path="*" component={PageNotFound} />
               </div>
             </div>
           </div>

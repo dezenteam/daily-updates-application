@@ -28,7 +28,7 @@ class Sidebar extends Component {
             <ul>
               <li>
                 <NavLink
-                  to={"/home"}
+                  to={"/profile"}
                   className="side-menu"
                   activeClassName="side-menu--active"
                 >
@@ -38,18 +38,18 @@ class Sidebar extends Component {
               </li>
               <li>
                 <NavLink
-                  to={"/user/taniarascia"}
+                  to={"/restdata"}
                   className="side-menu"
                   activeClassName="side-menu--active"
                 >
                   <MdPayment className=" fa-lg mr-3" />
-                  Table APIs Data
+                  Reactstrap Api
                 </NavLink>
               </li>
               <li>
                 <li>
                   <NavLink
-                    to={"/profile"}
+                    to={"/home"}
                     className="side-menu"
                     activeClassName="side-menu--active"
                   >
@@ -57,7 +57,7 @@ class Sidebar extends Component {
                   </NavLink>
                 </li>
                 <NavLink
-                  to={"/component-1"}
+                  to={"/crud"}
                   className="side-menu"
                   activeClassName="side-menu--active"
                 >
@@ -66,7 +66,7 @@ class Sidebar extends Component {
               </li>
               <li>
                 <NavLink
-                  to={"/component-2"}
+                  to={"/info"}
                   className="side-menu"
                   activeClassName="side-menu--active"
                 >
@@ -84,11 +84,11 @@ class Sidebar extends Component {
               </li>
               <li>
                 <NavLink
-                  to={"/component-4"}
+                  to={"/charts"}
                   className="side-menu"
                   activeClassName="side-menu--active"
                 >
-                  <RiAlertLine className=" fa-lg mr-3" /> Component4
+                  <RiAlertLine className=" fa-lg mr-3" /> Chats
                 </NavLink>
               </li>
               <li>
@@ -97,7 +97,7 @@ class Sidebar extends Component {
                   className="side-menu"
                   activeClassName="side-menu--active"
                 >
-                  <RiAlertLine className=" fa-lg mr-3" /> Component5
+                  <RiAlertLine className=" fa-lg mr-3" /> Employee Details
                 </NavLink>
               </li>
               <li>
@@ -119,7 +119,7 @@ class Sidebar extends Component {
           </nav>
         </div>
         <div className="content sb-mc">
-          <div className="grid grid-cols-12 gap-6 mt-5">
+          <div className="grid grid-cols-12 gap-6 mt-2 mx-2">
             {this.props.children}
           </div>
         </div>

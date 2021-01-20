@@ -16,14 +16,12 @@ export class LoginPage extends Component {
 
   login = (e) => {
     e.preventDefault();
-    // let history = useHistory();
-    let thisView = this;
     if (
       this.state.username === "shoaib@gmail.com" &&
       this.state.password === localStorage.getItem("password")
     ) {
       console.log("username..");
-      thisView.props.history.push("./home");
+      this.props.history.push("/profile");
       localStorage.setItem("password", this.state.password);
     } else {
       this.setState({

@@ -1,0 +1,34 @@
+.col-sm {
+  border: 1px solid #cccccc;
+  margin: 0px 5px;
+  background-color: green;
+  height: 110px;
+  padding: 20px;
+}
+
+.cardIcon1 {
+  background-color: green;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 24px;
+}
+
+.col-sm:nth-child(2) {
+  background: red;
+  color: white;
+  font-size: 24px;
+}
+
+.col-sm:nth-child(3) {
+  background: #fafa44;
+  color: white;
+  font-size: 24px;
+}
+
+.col-sm:nth-child(4) {
+  background: #16236b;
+  color: white;
+  font-size: 24px;
+}
+/*# sourceMappingURL=cards.css.map */
