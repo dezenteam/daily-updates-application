@@ -8,6 +8,8 @@ import Login from './pages/Login/login';
 import Dashboard from './pages/Dashboard/dashboard';
 import Profile from './pages/Profile/profile';
 import AppLayoutRoute from './pages/applayout';
+import EditProfile from './pages/Profile/editProfile';
+import ChangePassword from './pages/Profile/changePassword';
 
 class App extends React.Component {
   render() {
@@ -26,6 +28,8 @@ class App extends React.Component {
                 <AppLayoutRoute path='/user/:id' component={User} />
                  
                 <AppLayoutRoute path='/profile' component={Profile} />
+                <AppLayoutRoute path='/editProfile' component={EditProfile} />
+                <AppLayoutRoute path='/changePassword' component={ChangePassword} />
                 <Redirect path='*' component={Login} />
                 </div>
               </div>

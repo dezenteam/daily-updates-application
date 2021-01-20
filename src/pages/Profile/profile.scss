@@ -199,7 +199,7 @@ p {
   color: #fff;
 }
 .about:active {
-  background-color: #007bff !important;
+  background-color: red !important;
   color:bisque !important
 }
 
@@ -213,10 +213,10 @@ p {
 .profile-feed-item {
   margin-top: 20px;
 }
-.settings {
+#nav-dropdown {
   color: #fff;
 }
-.settings:hover {
+#nav-dropdown:hover {
   background-color: rgb(255, 0, 106) !important;
   color: #fff;
   border-radius: 15px;
@@ -238,6 +238,7 @@ p {
   padding: 10px;
   margin: 5px 0px 5px 0px;
   color: #fff;
+  
 }
 
 .about_text {
@@ -253,3 +254,4 @@ p {
 .name {
   color: #fff;
 }
+

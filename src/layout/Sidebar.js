@@ -57,20 +57,20 @@ class Sidebar extends Component {
                   </NavLink>
                 </li>
                 <NavLink
-                  to={'/component-1'}
+                  to={'/editProfile'}
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component
+                  <RiAlertLine className=' fa-lg mr-3' /> Edit Profile
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to={'/component-2'}
+                  to={'/changePassword'}
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component
+                  <RiAlertLine className=' fa-lg mr-3' /> Change Password
                 </NavLink>
               </li>
               <li>
