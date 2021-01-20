@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./profile.scss";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import EditProfile from "./editProfile";
+
 
 export class Profile extends Component {
   constructor(props) {
@@ -121,12 +121,12 @@ export class Profile extends Component {
                     <div className="mt-4 py-2 right">
                       <ul className="nav profile-navbar">
                         <li className="nav-item">
-                          <a
+                          <button
                             className="nav-link d-flex align-items-center about"
                             onClick={this.showdata}
                           >
                             About Me
-                          </a>
+                          </button>
                         </li>
 
                         <NavDropdown title="Settings" id="nav-dropdown">
