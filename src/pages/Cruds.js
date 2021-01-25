@@ -54,11 +54,14 @@ class CrudOperations extends React.Component {
     });
   };
 
-  updateChange = (id) => {
+  deleteData = (id) => {
     axios
       .delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then((response) => {
-        console.log(response);
+        if ()
+          this.setState({
+
+          })
       })
       .catch((error) => {
         console.log(error);
@@ -93,32 +96,39 @@ class CrudOperations extends React.Component {
             onChange={this.changeHandler}
           />
           <button onClick={this.submitHandler} style={{ margin: "5px" }}>
-            ADD DATA
-          </button>
-          <button
-            onClick={(id) => this.updateChange(5)}
-            style={{ margin: "5px" }}
-          >
-            {" "}
-            DELETE{" "}
-          </button>
+            Submit
+             </button>
+
+
         </div>
-        <div>
-          <Table style={{ width: "100%", border: "none" }}>
-            <tr>
+        <div style={{ width: "70%", borderBottom: "none", background: "white" }}>
+          <Table >
+            <tr style={{ border: "none" }}>
               <th>POST ID </th>
               <th>POST TITLE </th>
               <th>POST BODY </th>
+              <th>ACTION </th>
             </tr>
 
             {posts.length
               ? posts.map((post) => (
-                  <tr key={post.id}>
-                    <td> {post.id} </td>
-                    <td> {post.title.slice(0, 10)} </td>
-                    <td> {post.body.slice(0, 25)} </td>
-                  </tr>
-                ))
+                <tr key={post.id}>
+                  <td> {post.id} </td>
+                  <td> {post.title.slice(0, 10)} </td>
+                  <td> {post.body.slice(0, 25)} </td>
+                  <td>
+                    <button onClick={this.submitHandler} style={{ margin: "5px" }}>
+                      Update DATA
+                    </button>
+                    <button
+                      onClick={(id) => this.deleteData({ post.id })}
+                      style={{ margin: "5px", background: "red" }}
+                    >
+                      DELETE
+                    </button>
+                  </td>
+                </tr>
+              ))
               : null}
 
             {errorMassage ? <div>{errorMassage} </div> : null}

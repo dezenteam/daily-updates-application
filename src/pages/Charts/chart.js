@@ -38,15 +38,15 @@ function MyChart() {
       <div class="container">React Charts</div>
       <div
         style={{
-          width: "550px",
-          height: "350px",
+          width: "70vw",
+          height: "70vh",
           backgroundColor: "white",
           justifyContent: "center",
           alignItems: "center",
-          boxShadow: "0 0 15px #fff",
           alignSelf: "center",
-          marginLeft: "250px",
+          margin: "50px",
           padding: "20px",
+          boxShadow: " 0 0 15px #ccccc"
         }}
       >
         <Chart data={data} axes={axes} />

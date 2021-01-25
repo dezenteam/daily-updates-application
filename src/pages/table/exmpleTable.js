@@ -45,10 +45,7 @@ class Table2 extends React.Component {
         },
       ],
 
-      // dropdownLables : [
-      //   { value:'Electronic' , label: 'Electronic' },
-      //   { value: 'Accessories', label: 'Accessories' },
-      //   { value: 'Laptops', label: 'Laptops' }] ,
+
 
       addShowModal: false,
     };
@@ -78,9 +75,7 @@ class Table2 extends React.Component {
     // console.log('cellitems',cell)
     return (
       <div>
-        <Button onClick={this.updateChange()} className="update-btn">
-          Update
-        </Button>
+        <Button className="update-btn">Update</Button>
         <Button
           onClick={() => {
             this.deleteChange(row.id);
@@ -93,19 +88,6 @@ class Table2 extends React.Component {
     );
   };
 
-  updateChange = () => {
-    this.props.history.push("/user/taniarascia");
-  };
-
-  // let table_row =
-  // [  {
-  //   userId: 1,
-  //   id: 2,
-  //   title: "quis ut nam facilis et officia qui",
-  //   completed: false
-  //   } ]
-
-  // this.setState({ products:product_row})
 
   deleteChange = (id) => {
     console.log("delete clicked", id);
@@ -153,13 +135,13 @@ class Table2 extends React.Component {
   };
 
   render() {
-    const { products, todos } = this.state;
+    const { todos } = this.state;
     const options = {
       sizePerPageDropDown: this.renderSizePerPageDropDown,
     };
 
     return (
-      <div className="container">
+      <div className="container-fluid">
         <BootstrapTable
           width="100"
           data={todos}

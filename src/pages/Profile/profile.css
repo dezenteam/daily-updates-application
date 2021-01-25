@@ -1,5 +1,8 @@
 .page-header {
-  margin: 0 0 1.5rem;
+  margin: 50px !important;
+  color: black !important;
+  width: 100vw !important;
+  height: 100vh !important;
 }
 .page-header {
   align-items: center !important;

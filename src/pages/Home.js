@@ -1,7 +1,7 @@
 import React from "react";
-import Cards from "../components/cards/cards";
+
 import CardType2 from "../components/CradType2/CardType2";
-import img1 from "../../src/Images/image.png";
+
 
 class HomePage extends React.Component {
   render() {

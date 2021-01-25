@@ -1,0 +1,13 @@
+fetching API Data from the server & using Delete button you can delete the 
+
+
+cardHeading 
+ <div className="bg-white p-3 m-2 ">
+        {/* <ul className="list-inline">
+          <li> */}
+        <a className="active-filter" href="#" data-filter="*">
+          {this.props.title}
+        </a>
+        {/* </li>
+        </ul> */}
+</div>

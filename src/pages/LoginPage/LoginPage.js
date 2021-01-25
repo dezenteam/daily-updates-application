@@ -16,12 +16,14 @@ export class LoginPage extends Component {
 
   login = (e) => {
     e.preventDefault();
+    // let history = useHistory();
+    let thisView = this;
     if (
       this.state.username === "shoaib@gmail.com" &&
       this.state.password === localStorage.getItem("password")
     ) {
       console.log("username..");
-      this.props.history.push("/profile");
+      thisView.props.history.push("/profile");
       localStorage.setItem("password", this.state.password);
     } else {
       this.setState({
@@ -30,6 +32,8 @@ export class LoginPage extends Component {
     }
     console.log(this.state);
   };
+
+
 
   handleChange = (e) => {
     this.setState({
@@ -67,10 +71,10 @@ export class LoginPage extends Component {
             {this.state.error ? (
               <Row className="error-lable">{this.state.errorMessage}</Row>
             ) : (
-              " "
-            )}
+                " "
+              )}
             <Row>
-              <Button className="btn-title" onClick={this.login}>
+              <Button className="btn-title1" onClick={this.login}>
                 Login
               </Button>
             </Row>

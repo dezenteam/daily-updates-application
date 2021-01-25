@@ -41,38 +41,36 @@ export class Profile extends Component {
                           Information - and Interface Design.
                         </p>
                         <div className="d-flex justify-content-center">
-                          <button className="btn btn-success mr-1">
-                            Hire Me
-                          </button>
-                          <button className="btn btn-success">Follow</button>
+                          <button className="btn btn-dark mr-1">Hire Me</button>
+                          <button className="btn btn-dark">Follow</button>
                         </div>
                       </div>
                       <div className=" py-4 skills mb-4">
                         <b> Skills </b>
                         <div className="skills_section">
-                          <label className="badge  badge-outline-info mr-1">
+                          <label className="badge  badge-outline-dark mr-1">
                             ReactJS
                           </label>
-                          <label className="badge  badge-outline-info mr-1">
+                          <label className="badge  badge-outline-dark mr-1">
                             React Native
                           </label>
-                          <label className="badge badge-outline-info mr-1">
+                          <label className="badge badge-outline-dark mr-1">
                             MongoDB
                           </label>
-                          <label className="badge badge-outline-info mr-1">
+                          <label className="badge badge-outline-dark mr-1">
                             NodeJS
                           </label>
-                          <label className="badge badge-outline-info mr-1">
+                          <label className="badge badge-outline-dark mr-1">
                             Web Designer
                           </label>
-                          <label className="badge badge-outline-info mr-1">
+                          <label className="badge badge-outline-dark mr-1">
                             Mobile Developer
                           </label>
                         </div>
                       </div>
                     </div>
 
-                    <button className="btn btn-success btn-block mb-3">
+                    <button className="btn btn-success text-white btn mb-3">
                       Preview
                     </button>
                   </div>
@@ -80,12 +78,9 @@ export class Profile extends Component {
                     <div className="mt-1 py-2 right">
                       <ul className="nav profile-navbar">
                         <li className="nav-item">
-                          <a
-                            className="nav-link d-flex align-items-center about "
-                            onClick={(e) => this.showdata("about")}
-                          >
-                            About Me
-                          </a>
+
+                          <b onClick={(e) => this.showdata("about")}>About Me</b>
+
                         </li>
 
                         <NavDropdown
@@ -114,9 +109,9 @@ export class Profile extends Component {
                           <div className="about_text">
                             <p>
                               For the past 16 years, I've been developing
-                              applications for the web using mostly PHP. I do
-                              this for a living and love what I do as every day
-                              there is something new and exciting to learn.
+                              applications for the web using mostly React JS. I
+                              do this for a living and love what I do as every
+                              day there is something new and exciting to learn.
                             </p>
 
                             <p>

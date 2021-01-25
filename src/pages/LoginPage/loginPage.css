@@ -37,9 +37,9 @@
   color: rgb(15, 15, 77);
   padding-bottom: 30px;
 }
-.btn-title {
+.btn-title1 {
   margin-top: 35px;
-  margin-left: 70px !important;
+  margin-left: 70px;
   width: 280px !important;
   height: 45px;
   background-color: rgb(15, 15, 77) !important;
