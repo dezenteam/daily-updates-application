@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
  
 export default class EditProfile extends Component {
+  saveData =() => {
+    this.props.history.push('/profile')
+  }
   render () {
     return (
 <div>
@@ -51,7 +54,7 @@ export default class EditProfile extends Component {
               <div className="invalid-feedback" />
             </div>
             <div className="form-buttons">
-              <button className="btn btn-primary mr-3" type="button">Save</button>
+              <button className="btn btn-primary mr-3" type="button" onClick={this.saveData}>Save</button>
               <button className="btn btn-light mr-3" type="button">Reset</button>
               <button className="btn btn-light" type="button">Cancel</button>
             </div>

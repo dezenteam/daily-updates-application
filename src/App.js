@@ -10,6 +10,7 @@ import Profile from './pages/Profile/profile';
 import AppLayoutRoute from './pages/applayout';
 import EditProfile from './pages/Profile/editProfile';
 import ChangePassword from './pages/Profile/changePassword';
+import Table2 from './pages/Table/table';
 
 class App extends React.Component {
   render() {
@@ -30,6 +31,7 @@ class App extends React.Component {
                 <AppLayoutRoute path='/profile' component={Profile} />
                 <AppLayoutRoute path='/editProfile' component={EditProfile} />
                 <AppLayoutRoute path='/changePassword' component={ChangePassword} />
+                <AppLayoutRoute path='/table' component={Table2} />
                 <Redirect path='*' component={Login} />
                 </div>
               </div>

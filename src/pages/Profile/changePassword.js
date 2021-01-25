@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 
 export default class EditProfile extends Component {
+  savePassword= ()=> {
+    this.props.history.push('/')
+  }
   render() {
     return (
       <section className="widget Widget_widget__2TZ57">
@@ -68,7 +71,7 @@ export default class EditProfile extends Component {
                   <div className="invalid-feedback" />
                 </div>
                 <div className="form-buttons">
-                  <button className="btn btn-primary mr-md" type="button">
+                  <button className="btn btn-primary mr-md" type="button" onClick={this.savePassword}>
                     Change Password
                   </button>
                   <button className="btn btn-light" type="button">

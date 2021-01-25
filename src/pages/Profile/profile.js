@@ -15,6 +15,13 @@ export class Profile extends Component {
     this.setState({ displaydata: !this.state.displaydata });
   };
 
+  editProfile=() => {
+    this.props.history.push('/editProfile')
+  }
+  changePassword = ()=> {
+    this.props.history.push('/changePassword')
+  }
+
   
   render() {
     return (
@@ -130,8 +137,8 @@ export class Profile extends Component {
                         </li>
 
                         <NavDropdown title="Settings" id="nav-dropdown">
-                          <NavDropdown.Item>Edit Profile</NavDropdown.Item>
-                          <NavDropdown.Item>Change Password</NavDropdown.Item>
+                          <NavDropdown.Item onClick={this.editProfile}>Edit Profile</NavDropdown.Item>
+                          <NavDropdown.Item onClick={this.changePassword}>Change Password</NavDropdown.Item>
                         </NavDropdown>
                        
                       </ul>
