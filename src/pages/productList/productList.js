@@ -8,8 +8,8 @@ export default class ProductList extends Component {
   render() {
     return (
 
-      <div className="container">
-        <div className="row ml-4 mb-2">
+      <div className="container-fluid">
+        <div className="row ml-4 mb-3">
           <CardHeadingFilters />
 
         </div>
@@ -18,8 +18,7 @@ export default class ProductList extends Component {
           <ProductCard />
           <ProductCard />
           <ProductCard />
-        </div>
-        <div className="row">
+
           <ProductCard />
           <ProductCard />
           <ProductCard />

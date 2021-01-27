@@ -68,6 +68,11 @@ class CrudOperations extends React.Component {
       });
   };
 
+  updateData = (post) => {
+    axios.put(`https://jsonplaceholder.typicode.com/posts/${post.userId}`)
+
+  }
+
   render() {
     const { userId, title, body, posts, errorMassage } = this.state;
     return (
@@ -114,14 +119,14 @@ class CrudOperations extends React.Component {
               ? posts.map((post) => (
                 <tr key={post.id}>
                   <td> {post.id} </td>
-                  <td> {post.title.slice(0, 10)} </td>
-                  <td> {post.body.slice(0, 25)} </td>
+                  <td> {post.title.slice(0, 15)} </td>
+                  <td> {post.body.slice(0, 35)} </td>
                   <td>
-                    <button onClick={this.submitHandler} style={{ margin: "5px" }}>
+                    <button onClick={this.updateData(post)} style={{ margin: "5px" }}>
                       Update DATA
                     </button>
                     <button
-                      onClick={() => this.deleteData({})}
+                      onClick={() => this.deleteData(post.id)}
                       style={{ margin: "5px", background: "red" }}
                     >
                       DELETE
