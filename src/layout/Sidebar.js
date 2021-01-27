@@ -28,7 +28,7 @@ class Sidebar extends Component {
             <ul>
               <li>
                 <NavLink
-                  to={"/profile"}
+                  to={"/dashboard"}
                   className="side-menu"
                   activeClassName="side-menu--active"
                 >
@@ -49,7 +49,7 @@ class Sidebar extends Component {
               <li>
                 <li>
                   <NavLink
-                    to={"/home"}
+                    to={"/profile"}
                     className="side-menu"
                     activeClassName="side-menu--active"
                   >

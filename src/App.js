@@ -24,15 +24,14 @@ class App extends React.Component {
             <div className="container-fluid admin-fluid">
               <div className="row" style={{ display: "contents" }}>
                 <Route exact path="/" component={LoginPage} />
-                <AppLayoutRoute path="/profile" component={Profile} />
+                <AppLayoutRoute path="/dashboard" component={Profile} />
                 <AppLayoutRoute path="/restdata" component={Table2} />
-                <AppLayoutRoute path="/home" component={Home} />
+                <AppLayoutRoute path="/profile" component={Home} />
                 <AppLayoutRoute path="/crud" component={CrudOperations} />
                 <AppLayoutRoute path="/info" component={Admin} />
                 <AppLayoutRoute path="/settings" component={SetPassword} />
                 <AppLayoutRoute path="/charts" component={MyChart} />
                 <AppLayoutRoute path="/products" component={ProductList} />
-
                 <AppLayoutRoute path="/component-6" component={PageNotFound} />
                 <Redirect path="*" component={PageNotFound} />
               </div>

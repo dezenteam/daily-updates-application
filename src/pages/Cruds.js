@@ -58,10 +58,10 @@ class CrudOperations extends React.Component {
     axios
       .delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then((response) => {
-        if ()
-          this.setState({
-
-          })
+        const delet = this.state.posts.filter(post => post.id !== id)
+        this.setState({
+          posts: delet
+        })
       })
       .catch((error) => {
         console.log(error);
@@ -121,7 +121,7 @@ class CrudOperations extends React.Component {
                       Update DATA
                     </button>
                     <button
-                      onClick={(id) => this.deleteData({ post.id })}
+                      onClick={() => this.deleteData({})}
                       style={{ margin: "5px", background: "red" }}
                     >
                       DELETE

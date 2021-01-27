@@ -8,22 +8,22 @@ export class CardHeadingFilters extends Component {
       <div className="col-xs-12 col-sm-12 col-md-12 shop-filter">
         <ul className="list-inline">
           <li>
-            <a className="active-filter" href="./products" data-filter="*">
+            <a className="active-filter" href="/#" data-filter="*">
               All Products
             </a>
           </li>
           <li>
-            <a href="./products" data-filter="filter-best">
+            <a href="/#" data-filter="filter-best">
               Best Selling
             </a>
           </li>
           <li>
-            <a href="./products" data-filter="filter-featured">
+            <a href="/#" data-filter="filter-featured">
               Featured
             </a>
           </li>
           <li>
-            <a href="./products" data-filter="filter-sale">
+            <a href="/#" data-filter="filter-sale">
               On Sale
             </a>
           </li>
