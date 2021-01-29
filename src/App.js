@@ -9,9 +9,10 @@ import Profile from "./pages/Profile/profile";
 import Admin from "./pages/admin";
 import Table2 from "./pages/table/exmpleTable";
 import SetPassword from "./pages/SetPassword/SetPassword";
-import MyChart from "./pages/Charts/chart";
+// import MyChart from "./pages/Charts/chart";
 import PageNotFound from "./pages/PageNotFound";
 import ProductList from "./pages/productList/productList";
+import SignUpForm from "./components/Forms/signUpForm";
 
 
 class App extends React.Component {
@@ -30,7 +31,7 @@ class App extends React.Component {
                 <AppLayoutRoute path="/crud" component={CrudOperations} />
                 <AppLayoutRoute path="/info" component={Admin} />
                 <AppLayoutRoute path="/settings" component={SetPassword} />
-                <AppLayoutRoute path="/charts" component={MyChart} />
+                <Route path="/singUp" component={SignUpForm} />
                 <AppLayoutRoute path="/products" component={ProductList} />
                 <AppLayoutRoute path="/component-6" component={PageNotFound} />
                 <Redirect path="*" component={PageNotFound} />

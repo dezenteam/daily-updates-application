@@ -21,7 +21,7 @@ class HomePage extends React.Component {
                 <i> Jan 15, 2021</i>
               </small>
             </h4>
-            <p>Detailed Description Analytics...</p>
+            <p>Detailed Analytics...</p>
           </div>
         </div>
 

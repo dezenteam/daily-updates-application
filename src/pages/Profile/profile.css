@@ -35,6 +35,8 @@
   border-radius: 0.25rem;
 }
 .card {
+  width: 50vw;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;

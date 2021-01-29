@@ -11,6 +11,8 @@ class CrudOperations extends React.Component {
       userId: "",
       title: "",
       body: "",
+      addFields: false,
+
     };
   }
 
@@ -68,8 +70,16 @@ class CrudOperations extends React.Component {
       });
   };
 
-  updateData = (post) => {
-    axios.put(`https://jsonplaceholder.typicode.com/posts/${post.userId}`)
+  updateData = (id) => {
+    const data = {
+      userId: "abc",
+      title: "updatingData",
+      body: "User data has been updated"
+    }
+    axios.put(`https://jsonplaceholder.typicode.com/posts/${id}`, data)
+    this.setState({
+      posts: [...this.state.posts, data]
+    })
 
   }
 
@@ -77,35 +87,36 @@ class CrudOperations extends React.Component {
     const { userId, title, body, posts, errorMassage } = this.state;
     return (
       <div>
-        Enter Input Data
-        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-          <input
-            type="text"
-            name="userId"
-            placeholder="id"
-            value={userId}
-            onChange={this.changeHandler}
-          />
-          <input
-            type="text"
-            name="title"
-            placeholder="title"
-            value={title}
-            onChange={this.changeHandler}
-          />
-          <input
-            type="text"
-            name="body"
-            placeholder="body"
-            value={body}
-            onChange={this.changeHandler}
-          />
-          <button onClick={this.submitHandler} style={{ margin: "5px" }}>
-            Submit
+        { this.state.addFields ?
+          <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+            <input
+              type="text"
+              name="userId"
+              placeholder="id"
+              value={userId}
+              onChange={this.changeHandler}
+            />
+            <input
+              type="text"
+              name="title"
+              placeholder="title"
+              value={title}
+              onChange={this.changeHandler}
+            />
+            <input
+              type="text"
+              name="body"
+              placeholder="body"
+              value={body}
+              onChange={this.changeHandler}
+            />
+            <button onClick={this.submitHandler} style={{ margin: "5px" }}>
+              Submit
              </button>
 
 
-        </div>
+          </div> : null}
+
         <div style={{ width: "70%", borderBottom: "none", background: "white" }}>
           <Table >
             <tr style={{ border: "none" }}>
@@ -122,7 +133,7 @@ class CrudOperations extends React.Component {
                   <td> {post.title.slice(0, 15)} </td>
                   <td> {post.body.slice(0, 35)} </td>
                   <td>
-                    <button onClick={this.updateData(post)} style={{ margin: "5px" }}>
+                    <button onClick={this.updateData(post.userId)} style={{ margin: "5px" }}>
                       Update DATA
                     </button>
                     <button
