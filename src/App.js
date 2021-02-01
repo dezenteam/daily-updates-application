@@ -11,6 +11,7 @@ import AppLayoutRoute from './pages/applayout';
 import EditProfile from './pages/Profile/editProfile';
 import ChangePassword from './pages/Profile/changePassword';
 import Table2 from './pages/Table/table';
+import FormValidation from './pages/FormComponent/formValidation';
 
 class App extends React.Component {
   render() {
@@ -32,6 +33,7 @@ class App extends React.Component {
                 <AppLayoutRoute path='/editProfile' component={EditProfile} />
                 <AppLayoutRoute path='/changePassword' component={ChangePassword} />
                 <AppLayoutRoute path='/table' component={Table2} />
+                <AppLayoutRoute path='/formvalidation' component={FormValidation} />
                 <Redirect path='*' component={Login} />
                 </div>
               </div>
