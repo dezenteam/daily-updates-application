@@ -13,6 +13,8 @@ import ChangePassword from './pages/Profile/changePassword';
 import Table2 from './pages/Table/table';
 import FormValidation from './pages/FormComponent/formValidation';
 
+import MapContainer from './pages/mapcontainer';
+
 class App extends React.Component {
   render() {
     return (
@@ -34,6 +36,7 @@ class App extends React.Component {
                 <AppLayoutRoute path='/changePassword' component={ChangePassword} />
                 <AppLayoutRoute path='/table' component={Table2} />
                 <AppLayoutRoute path='/formvalidation' component={FormValidation} />
+                <AppLayoutRoute path='/mapcontainer' component={MapContainer} />
                 <Redirect path='*' component={Login} />
                 </div>
               </div>

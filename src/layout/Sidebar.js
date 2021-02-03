@@ -75,11 +75,11 @@ class Sidebar extends Component {
               </li>
               <li>
                 <NavLink
-                  to={'/component-3'}
+                  to={'/mapcontainer'}
                   className='side-menu'
                   activeClassName='side-menu--active'
                 >
-                  <RiAlertLine className=' fa-lg mr-3' /> Component
+                  <RiAlertLine className=' fa-lg mr-3' /> Contact form
                 </NavLink>
               </li>
               <li>
