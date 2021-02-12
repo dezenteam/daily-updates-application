@@ -16,6 +16,7 @@ import FormValidation from './pages/FormComponent/formValidation';
 import MapContainer from './pages/mapcontainer';
 
 import Servicess from './pages/Servicess/servicess';
+import Plants from './pages/Plants/plants';
 
 class App extends React.Component {
   render() {
@@ -40,6 +41,7 @@ class App extends React.Component {
                 <AppLayoutRoute path='/formvalidation' component={FormValidation} />
                 <AppLayoutRoute path='/mapcontainer' component={MapContainer} />
                 <AppLayoutRoute path='/servicess' component={Servicess} />
+                <AppLayoutRoute path='/plants' component={Plants} />
                 <Redirect path='*' component={Login} />
                 </div>
               </div>
