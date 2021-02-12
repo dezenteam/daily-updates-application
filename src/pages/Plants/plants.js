@@ -46,7 +46,6 @@ export default class Plants extends Component {
           </div>
           <div className="asideSection homegift mobileImgHide">
             <a href="/diwali-gifting">
-            
               <img
                 className=" lazyloaded"
                 src={require("../../assets/images/samples/tile-giftingnewjan.jpg")}
@@ -57,12 +56,12 @@ export default class Plants extends Component {
         </div>
         <div className="plantParent section-container">
           <div className="tableCell">
-          <img
-                className=" lazyloaded"
-                src={require("../../assets/images/samples/Plant-Parent-Club-Final-Logo.png")}
-                alt="upgrade planter"
-              />
-           
+            <img
+              className=" lazyloaded"
+              src={require("../../assets/images/samples/Plant-Parent-Club-Final-Logo.png")}
+              alt="upgrade planter"
+            />
+
             <p>
               Become a member and win coins and exclusive rewards every time you
               shop.
