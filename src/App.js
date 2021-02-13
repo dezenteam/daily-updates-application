@@ -17,6 +17,7 @@ import MapContainer from './pages/mapcontainer';
 
 import Servicess from './pages/Servicess/servicess';
 import Plants from './pages/Plants/plants';
+import MultipleCarousel from './pages/MultipleCarousel/multiplecarousel';
 
 class App extends React.Component {
   render() {
@@ -42,6 +43,7 @@ class App extends React.Component {
                 <AppLayoutRoute path='/mapcontainer' component={MapContainer} />
                 <AppLayoutRoute path='/servicess' component={Servicess} />
                 <AppLayoutRoute path='/plants' component={Plants} />
+                <AppLayoutRoute path='/multiplecarousel' component={MultipleCarousel} />
                 <Redirect path='*' component={Login} />
                 </div>
               </div>
